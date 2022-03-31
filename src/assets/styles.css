@@ -1,0 +1,46 @@
+.cont{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding-top: 2%;
+}
+img{
+    height: 100%;
+}
+
+p{
+    
+}
+.card{
+    height: 32em;
+    width: 90%;
+    border: 1px solid #0d6efd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin-bottom: 10%;
+    overflow: hidden;
+   
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.top{
+    height: 50%;
+    padding-bottom: 1%;
+}
+
+.bottom{
+    width: fit-content;
+    height: fit-content;
+}
+.bottom:hover{
+    animation: fliptxt 20s linear infinite;
+    transform: translateY(15px);
+}
+@keyframes fliptxt{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
